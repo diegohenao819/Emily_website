@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-24T01:51:56+00:00",
+  "title": "Design System: Emily's Learning Garden",
+  "extensions": {
+    "colorMeta": {
+      "wall": {
+        "role": "neutral",
+        "displayName": "Classroom Sky",
+        "canonical": "oklch(87.9% 0.072 232.9)",
+        "tonalRamp": [
+          "#000d1a",
+          "#00283b",
+          "#09465f",
+          "#2f647f",
+          "#5288a4",
+          "#76adca",
+          "#9cd3f2",
+          "#def2fe"
+        ]
+      },
+      "wall-deep": {
+        "role": "neutral",
+        "displayName": "Shadowed Sky",
+        "canonical": "oklch(79.9% 0.096 234.0)",
+        "tonalRamp": [
+          "#000d1a",
+          "#00283b",
+          "#024662",
+          "#0d668b",
+          "#3c89b1",
+          "#63afd8",
+          "#8dd5fd",
+          "#def2fe"
+        ]
+      },
+      "grass": {
+        "role": "neutral",
+        "displayName": "Meadow Green",
+        "canonical": "oklch(71.3% 0.192 142.4)",
+        "tonalRamp": [
+          "#001100",
+          "#002e00",
+          "#004f00",
+          "#047201",
+          "#1e9b18",
+          "#4ec147",
+          "#77e96f",
+          "#cbffc6"
+        ]
+      },
+      "grass-deep": {
+        "role": "neutral",
+        "displayName": "Stem Green",
+        "canonical": "oklch(60.4% 0.170 143.9)",
+        "tonalRamp": [
+          "#001100",
+          "#002e01",
+          "#014f0a",
+          "#037214",
+          "#2d9934",
+          "#58bf5a",
+          "#80e780",
+          "#cbffc9"
+        ]
+      },
+      "grass-light": {
+        "role": "neutral",
+        "displayName": "Leaf Green",
+        "canonical": "oklch(81.6% 0.189 133.5)",
+        "tonalRamp": [
+          "#021000",
+          "#132b00",
+          "#274b01",
+          "#3c6d04",
+          "#549404",
+          "#71bc28",
+          "#96e458",
+          "#d1ffb3"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cream Paper",
+        "canonical": "oklch(98.6% 0.014 84.6)",
+        "tonalRamp": [
+          "#0e0b05",
+          "#27241c",
+          "#433f37",
+          "#615d55",
+          "#848077",
+          "#a9a49b",
+          "#cfcac0",
+          "#f3eee4"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Classroom Ink",
+        "canonical": "oklch(27.6% 0.088 275.5)",
+        "tonalRamp": [
+          "#06012f",
+          "#1a1d4e",
+          "#333a6e",
+          "#50598f",
+          "#717cb5",
+          "#95a0dc",
+          "#bcc7fe",
+          "#eaeeff"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "oklch(39.4% 0.099 277.2)",
+        "tonalRamp": [
+          "#080033",
+          "#1b1a52",
+          "#343873",
+          "#505794",
+          "#727abb",
+          "#959fe2",
+          "#bdc6fe",
+          "#eaedff"
+        ]
+      },
+      "pink": {
+        "role": "primary",
+        "displayName": "Bubblegum Paper",
+        "canonical": "oklch(69.2% 0.220 358.6)",
+        "tonalRamp": [
+          "#20000b",
+          "#490023",
+          "#77013f",
+          "#aa015c",
+          "#dd2a7e",
+          "#fe68a3",
+          "#feb1ca",
+          "#fde8ee"
+        ]
+      },
+      "pink-deep": {
+        "role": "primary",
+        "displayName": "Raspberry Card",
+        "canonical": "oklch(54.9% 0.205 2.0)",
+        "tonalRamp": [
+          "#210009",
+          "#4a0020",
+          "#78003a",
+          "#ac0055",
+          "#da3577",
+          "#fe6a9c",
+          "#fdb2c6",
+          "#fee8ed"
+        ]
+      },
+      "turquoise": {
+        "role": "secondary",
+        "displayName": "Pool Turquoise",
+        "canonical": "oklch(70.2% 0.121 208.8)",
+        "tonalRamp": [
+          "#000e12",
+          "#002a30",
+          "#074851",
+          "#076a76",
+          "#0f90a0",
+          "#17b9cd",
+          "#55e0f5",
+          "#ccf8ff"
+        ]
+      },
+      "turquoise-deep": {
+        "role": "secondary",
+        "displayName": "Deep Lagoon",
+        "canonical": "oklch(52.9% 0.092 212.7)",
+        "tonalRamp": [
+          "#000e13",
+          "#002a32",
+          "#054853",
+          "#066979",
+          "#2b8ea1",
+          "#56b4c7",
+          "#7edbee",
+          "#d3f6fd"
+        ]
+      },
+      "lime": {
+        "role": "secondary",
+        "displayName": "Lime Leaf",
+        "canonical": "oklch(80.1% 0.198 127.2)",
+        "tonalRamp": [
+          "#060f00",
+          "#1b2a00",
+          "#314800",
+          "#4a6902",
+          "#679007",
+          "#85b80f",
+          "#a7e138",
+          "#d7ffa0"
+        ]
+      },
+      "orange": {
+        "role": "tertiary",
+        "displayName": "Tangerine Paper",
+        "canonical": "oklch(72.4% 0.187 48.9)",
+        "tonalRamp": [
+          "#1e0100",
+          "#3e1700",
+          "#682b00",
+          "#944204",
+          "#ca5b00",
+          "#fe7918",
+          "#ffb892",
+          "#feeadf"
+        ]
+      },
+      "orange-deep": {
+        "role": "tertiary",
+        "displayName": "Burnt Orange Card",
+        "canonical": "oklch(58.2% 0.171 43.6)",
+        "tonalRamp": [
+          "#1f0000",
+          "#421200",
+          "#6d2600",
+          "#9b3b00",
+          "#cf550e",
+          "#f97b41",
+          "#fdb89b",
+          "#feeae1"
+        ]
+      },
+      "violet": {
+        "role": "tertiary",
+        "displayName": "Grape Paper",
+        "canonical": "oklch(60.9% 0.220 293.7)",
+        "tonalRamp": [
+          "#10002e",
+          "#2c0061",
+          "#4c009e",
+          "#6a2fca",
+          "#8b59f4",
+          "#ab8efe",
+          "#cdc0fd",
+          "#efecfe"
+        ]
+      },
+      "violet-deep": {
+        "role": "tertiary",
+        "displayName": "Deep Grape Card",
+        "canonical": "oklch(47.4% 0.225 288.2)",
+        "tonalRamp": [
+          "#0e002f",
+          "#270066",
+          "#4502a4",
+          "#6131d1",
+          "#805cfb",
+          "#a192ff",
+          "#c7c3fc",
+          "#edecff"
+        ]
+      },
+      "yellow": {
+        "role": "secondary",
+        "displayName": "Sunshine Yellow",
+        "canonical": "oklch(87.9% 0.162 90.9)",
+        "tonalRamp": [
+          "#120a00",
+          "#2e2200",
+          "#4f3d00",
+          "#725b04",
+          "#9b7c04",
+          "#c7a003",
+          "#f2c52c",
+          "#feeec0"
+        ]
+      },
+      "red": {
+        "role": "tertiary",
+        "displayName": "Poppy Red",
+        "canonical": "oklch(66.9% 0.219 20.9)",
+        "tonalRamp": [
+          "#220001",
+          "#4c000a",
+          "#7c001a",
+          "#b10029",
+          "#e62a43",
+          "#ff7074",
+          "#fdb5b3",
+          "#fee9e8"
+        ]
+      },
+      "flower-sky": {
+        "role": "tertiary",
+        "displayName": "Flower Sky",
+        "canonical": "oklch(81.6% 0.113 231.4)",
+        "tonalRamp": [
+          "#000d18",
+          "#002839",
+          "#04465f",
+          "#00668b",
+          "#1f8bb7",
+          "#4eb1df",
+          "#8ad6fd",
+          "#ddf2fe"
+        ]
+      },
+      "flower-peach": {
+        "role": "tertiary",
+        "displayName": "Flower Peach",
+        "canonical": "oklch(82.4% 0.106 46.5)",
+        "tonalRamp": [
+          "#1e0100",
+          "#401500",
+          "#6b2900",
+          "#8d4823",
+          "#b46b47",
+          "#db8f6a",
+          "#fdb998",
+          "#feeae0"
+        ]
+      },
+      "flower-lilac": {
+        "role": "tertiary",
+        "displayName": "Flower Lilac",
+        "canonical": "oklch(79.2% 0.125 301.0)",
+        "tonalRamp": [
+          "#13002a",
+          "#300855",
+          "#4c2a76",
+          "#6a4a98",
+          "#8d6dbf",
+          "#b291e6",
+          "#d4bdfd",
+          "#f1ebfd"
+        ]
+      },
+      "flower-mint": {
+        "role": "tertiary",
+        "displayName": "Flower Mint",
+        "canonical": "oklch(83.6% 0.109 165.3)",
+        "tonalRamp": [
+          "#001007",
+          "#002c1d",
+          "#074c36",
+          "#056f50",
+          "#2e9570",
+          "#59ba94",
+          "#80e1b9",
+          "#c0ffe3"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display (letter scraps)",
+        "purpose": "Site and activity titles, one Lilita letter per paper scrap; xl clamp(2.6rem,9vw,5.6rem), lg clamp(2rem,6vw,3.6rem), md clamp(1.6rem,4.5vw,2.4rem)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Reward praise and big quiz numerals (up to clamp(3.2rem,13vw,6.5rem))."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Door labels, topic names, flower faces, the Listen again button."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Instruction signs in Andika bold with tabular numerals; buttons at 1.25rem."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Hints, counters, the Home tab. Floor is 1rem."
+      }
+    },
+    "shadows": [
+      {
+        "name": "glue",
+        "value": "0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)",
+        "purpose": "Resting state of every paper sheet."
+      },
+      {
+        "name": "glue-lift",
+        "value": "0 6px 4px rgba(29,33,82,0.16), 0 18px 28px -8px rgba(29,33,82,0.4)",
+        "purpose": "Paper button hover on pointer devices."
+      },
+      {
+        "name": "petal-layer",
+        "value": "drop-shadow(0 2.5px 2.2px rgba(29,33,82,0.28))",
+        "purpose": "Each SVG layer of flowers, buds and stems (feDropShadow)."
+      },
+      {
+        "name": "decor-float",
+        "value": "drop-shadow(0 3px 2px rgba(29,33,82,0.16)) drop-shadow(0 10px 12px rgba(29,33,82,0.14))",
+        "purpose": "Clouds, sun, butterflies, paper boat."
+      },
+      {
+        "name": "sticker",
+        "value": "drop-shadow(2.5px 0 0 #fff) drop-shadow(-2.5px 0 0 #fff) drop-shadow(0 2.5px 0 #fff) drop-shadow(0 -2.5px 0 #fff) drop-shadow(0 4px 4px rgba(29,33,82,0.28))",
+        "purpose": "White cut-out border and glue shadow on every picture."
+      },
+      {
+        "name": "grass-edge",
+        "value": "drop-shadow(0 -2px 3px rgba(29,33,82,0.22))",
+        "purpose": "Torn grass strips casting upward onto the wall."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-paper",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Paper button hover/press (260ms), glue-in, pop-digit."
+      },
+      {
+        "name": "glue-in",
+        "value": "700ms ease-paper; scale 1.4 rotate(-16deg) -> 0.94 rotate(3deg) -> 1 rotate(0)",
+        "purpose": "A flower or picture is earned or revealed."
+      },
+      {
+        "name": "sway",
+        "value": "5s ease-in-out infinite; rotate(-2deg) <-> rotate(2deg) from the stem base",
+        "purpose": "Flower heads, meadow, sun, butterflies, garden; staggered with negative delays."
+      },
+      {
+        "name": "pop-digit",
+        "value": "420ms ease-paper; translateY(40%) scale(0.6) -> translateY(0) scale(1)",
+        "purpose": "Digits appearing."
+      },
+      {
+        "name": "wiggle",
+        "value": "480ms ease-out horizontal shake with +/-3deg",
+        "purpose": "A wrong choice, kindly."
+      },
+      {
+        "name": "petal-fall",
+        "value": "2.2s to 3.5s cubic-bezier(0.3, 0.2, 0.4, 1), randomized drift, spin and delay",
+        "purpose": "Reward petal rain; removed under reduced motion."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation and transition durations 1ms, single iteration",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Paper Button (Pink)",
+      "kind": "button",
+      "refersTo": "paper-button-pink",
+      "description": "Default forward action (Play again, Next): bubblegum paper, ink text.",
+      "html": "<button class=\"ds-paper-btn-pink\">Play again</button>",
+      "css": ".ds-paper-btn-pink { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 12px 24px; font-family: Andika, system-ui, sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--ink, #1d2152); background-color: var(--pink, #ff4f9a); background-image: var(--grain, url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.2 0 0 0 0.14 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")); border: 0; border-radius: var(--cut, 18px 26px 14px 30px / 24px 14px 28px 16px); box-shadow: var(--glue, 0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)); cursor: pointer; transition: transform 260ms cubic-bezier(0.16,1,0.3,1), box-shadow 260ms cubic-bezier(0.16,1,0.3,1); } .ds-paper-btn-pink:hover { transform: translateY(-3px) rotate(-1deg); box-shadow: var(--glue-lift, 0 6px 4px rgba(29,33,82,0.16), 0 18px 28px -8px rgba(29,33,82,0.4)); } .ds-paper-btn-pink:active { transform: translateY(1px) scale(0.97); box-shadow: var(--glue, 0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)); } .ds-paper-btn-pink:focus-visible { outline: 4px dashed var(--ink, #1d2152); outline-offset: 5px; }"
+    },
+    {
+      "name": "Paper Button (Cream / Home tab)",
+      "kind": "nav",
+      "refersTo": "paper-button-paper",
+      "description": "The Home tab and back buttons: cream paper with a functional Lucide icon.",
+      "html": "<a class=\"ds-paper-btn-paper\" href=\"#\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8\"/><path d=\"M3 10a2 2 0 0 1 .7-1.5l7-6a2 2 0 0 1 2.6 0l7 6a2 2 0 0 1 .7 1.5v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"/></svg>Home</a>",
+      "css": ".ds-paper-btn-paper { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 12px 24px; font-family: Andika, system-ui, sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--ink, #1d2152); background-color: var(--paper, #fffaf0); background-image: var(--grain, url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.2 0 0 0 0.14 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")); border: 0; border-radius: var(--cut, 18px 26px 14px 30px / 24px 14px 28px 16px); box-shadow: var(--glue, 0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)); cursor: pointer; transition: transform 260ms cubic-bezier(0.16,1,0.3,1), box-shadow 260ms cubic-bezier(0.16,1,0.3,1); text-decoration: none; font-size: 1.125rem; padding: 10px 16px; min-height: 0; } .ds-paper-btn-paper:hover { transform: translateY(-3px) rotate(-1deg); box-shadow: var(--glue-lift, 0 6px 4px rgba(29,33,82,0.16), 0 18px 28px -8px rgba(29,33,82,0.4)); } .ds-paper-btn-paper:active { transform: translateY(1px) scale(0.97); box-shadow: var(--glue, 0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)); } .ds-paper-btn-paper:focus-visible { outline: 4px dashed var(--ink, #1d2152); outline-offset: 5px; }"
+    },
+    {
+      "name": "Paper Button (Deep Grape)",
+      "kind": "button",
+      "refersTo": "paper-button-violet",
+      "description": "Deep paper tone with white text; also the selected state of a toggle.",
+      "html": "<button class=\"ds-paper-btn-violet\">Mix all the tables</button>",
+      "css": ".ds-paper-btn-violet { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 12px 24px; font-family: Andika, system-ui, sans-serif; font-size: 1.25rem; font-weight: 700; color: #ffffff; background-color: var(--violet-deep, #5f2fcf); background-image: var(--grain, url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.2 0 0 0 0.14 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")); border: 0; border-radius: var(--cut, 18px 26px 14px 30px / 24px 14px 28px 16px); box-shadow: var(--glue, 0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)); cursor: pointer; transition: transform 260ms cubic-bezier(0.16,1,0.3,1), box-shadow 260ms cubic-bezier(0.16,1,0.3,1); } .ds-paper-btn-violet:hover { transform: translateY(-3px) rotate(-1deg); box-shadow: var(--glue-lift, 0 6px 4px rgba(29,33,82,0.16), 0 18px 28px -8px rgba(29,33,82,0.4)); } .ds-paper-btn-violet:active { transform: translateY(1px) scale(0.97); box-shadow: var(--glue, 0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)); } .ds-paper-btn-violet:focus-visible { outline: 4px dashed var(--ink, #1d2152); outline-offset: 5px; }"
+    },
+    {
+      "name": "Listen Button",
+      "kind": "button",
+      "refersTo": "listen-button",
+      "description": "Large turquoise-deep speaker button that replays the spoken word.",
+      "html": "<button class=\"ds-listen-btn\"><svg width=\"40\" height=\"40\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6A1.4 1.4 0 0 1 5.4 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5z\"/><path d=\"M16 9a5 5 0 0 1 0 6\"/><path d=\"M19.4 18.4a9 9 0 0 0 0-12.7\"/></svg>Listen again</button>",
+      "css": ".ds-listen-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 12px 24px; font-family: Andika, system-ui, sans-serif; font-size: 1.25rem; font-weight: 700; color: #ffffff; background-color: var(--turquoise-deep, #00798b); background-image: var(--grain, url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.2 0 0 0 0.14 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")); border: 0; border-radius: var(--cut, 18px 26px 14px 30px / 24px 14px 28px 16px); box-shadow: var(--glue, 0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)); cursor: pointer; transition: transform 260ms cubic-bezier(0.16,1,0.3,1), box-shadow 260ms cubic-bezier(0.16,1,0.3,1); min-height: 80px; padding: 16px 32px; font-family: \"Lilita One\", system-ui, sans-serif; font-weight: 400; font-size: clamp(1.8rem, 6vw, 2.6rem); gap: 12px; } .ds-listen-btn:hover { transform: translateY(-3px) rotate(-1deg); box-shadow: var(--glue-lift, 0 6px 4px rgba(29,33,82,0.16), 0 18px 28px -8px rgba(29,33,82,0.4)); } .ds-listen-btn:active { transform: translateY(1px) scale(0.97); box-shadow: var(--glue, 0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)); } .ds-listen-btn:focus-visible { outline: 4px dashed var(--ink, #1d2152); outline-offset: 5px; }"
+    },
+    {
+      "name": "Instruction Sign",
+      "kind": "card",
+      "refersTo": "paper-sign",
+      "description": "Cream sheet with a tilt and masking tape, carrying one short instruction.",
+      "html": "<p class=\"ds-sign\"><span class=\"ds-tape\" style=\"left:20px;transform:rotate(-8deg)\"></span><span class=\"ds-tape\" style=\"right:20px;transform:rotate(7deg)\"></span>Pick a game!</p>",
+      "css": ".ds-sign { position: relative; display: inline-block; margin: 16px; padding: 10px 20px; font-family: Andika, system-ui, sans-serif; font-weight: 700; font-size: 1.5rem; color: var(--ink, #1d2152); background-color: var(--paper, #fffaf0); background-image: var(--grain, url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.2 0 0 0 0.14 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")); border-radius: var(--cut, 18px 26px 14px 30px / 24px 14px 28px 16px); box-shadow: var(--glue, 0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)); transform: rotate(-1deg); } .ds-tape { position: absolute; top: -12px; width: 64px; height: 20px; background-color: rgba(255,244,196,0.78); box-shadow: 0 1px 2px rgba(29,33,82,0.18); clip-path: polygon(0 8%, 6% 0, 12% 10%, 100% 0, 96% 50%, 100% 100%, 8% 92%, 0 100%, 4% 50%); }"
+    },
+    {
+      "name": "Counter Sign",
+      "kind": "chip",
+      "refersTo": "counter-sign",
+      "description": "Yellow sign that counts: rounds, garden flowers.",
+      "html": "<span class=\"ds-counter\">Food · 1 of 10</span>",
+      "css": ".ds-counter { display: inline-block; padding: 8px 16px; font-family: Andika, system-ui, sans-serif; font-weight: 700; font-size: 1.125rem; color: var(--ink, #1d2152); background-color: var(--yellow, #ffd23f); background-image: var(--grain, url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.2 0 0 0 0.14 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")); border-radius: var(--cut, 18px 26px 14px 30px / 24px 14px 28px 16px); box-shadow: var(--glue, 0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)); }"
+    },
+    {
+      "name": "Letter Scrap Title",
+      "kind": "custom",
+      "refersTo": "letter-scrap",
+      "description": "Display titles spelled one letter per tilted paper scrap.",
+      "html": "<span class=\"ds-title\" role=\"img\" aria-label=\"Emily\"><span class=\"ds-scrap\" style=\"background-color:#ff4f9a;color:#fff;transform:rotate(-3deg)\">E</span><span class=\"ds-scrap\" style=\"background-color:#ffd23f;color:#1d2152;transform:rotate(4deg)\">m</span><span class=\"ds-scrap\" style=\"background-color:#00b3c7;color:#1d2152;transform:rotate(-1deg)\">i</span><span class=\"ds-scrap\" style=\"background-color:#ff7a1a;color:#1d2152;transform:rotate(2deg)\">l</span><span class=\"ds-scrap\" style=\"background-color:#8e5cf7;color:#fff;transform:rotate(-4deg)\">y</span></span>",
+      "css": ".ds-title { display: inline-flex; gap: 0.06em; } .ds-scrap { display: inline-block; font-family: \"Lilita One\", system-ui, sans-serif; font-size: clamp(2.6rem, 9vw, 5.6rem); line-height: 1; padding: 0.02em 0.12em 0.06em; border-radius: 8px 12px 7px 13px; box-shadow: var(--glue, 0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)); background-image: var(--grain, url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.2 0 0 0 0.14 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")); }"
+    },
+    {
+      "name": "Flower Door",
+      "kind": "custom",
+      "refersTo": "door-label",
+      "description": "A layered paper flower with a face, a tilted label sheet and a stem: the door to a game.",
+      "html": "<a class=\"ds-door\" href=\"#\"><span class=\"ds-door-head\"><svg viewBox=\"-60 -60 120 120\" width=\"100%\" height=\"100%\" aria-hidden=\"true\"><g style=\"filter: drop-shadow(0 2.5px 2.2px rgba(29,33,82,0.28))\" fill=\"#ff4f9a\"><path transform=\"rotate(0)\" d=\"M0 0 C 17 -9 20 -36 2 -48 C -5 -49 -18 -38 -17 -10 Z\"/><path transform=\"rotate(45)\" d=\"M0 0 C 17 -9 20 -36 2 -48 C -5 -49 -18 -38 -17 -10 Z\"/><path transform=\"rotate(90)\" d=\"M0 0 C 17 -9 20 -36 2 -48 C -5 -49 -18 -38 -17 -10 Z\"/><path transform=\"rotate(135)\" d=\"M0 0 C 17 -9 20 -36 2 -48 C -5 -49 -18 -38 -17 -10 Z\"/><path transform=\"rotate(180)\" d=\"M0 0 C 17 -9 20 -36 2 -48 C -5 -49 -18 -38 -17 -10 Z\"/><path transform=\"rotate(225)\" d=\"M0 0 C 17 -9 20 -36 2 -48 C -5 -49 -18 -38 -17 -10 Z\"/><path transform=\"rotate(270)\" d=\"M0 0 C 17 -9 20 -36 2 -48 C -5 -49 -18 -38 -17 -10 Z\"/><path transform=\"rotate(315)\" d=\"M0 0 C 17 -9 20 -36 2 -48 C -5 -49 -18 -38 -17 -10 Z\"/></g><g style=\"filter: drop-shadow(0 2.5px 2.2px rgba(29,33,82,0.28))\" fill=\"#ff7a1a\"><path transform=\"rotate(26)\" d=\"M0 0 C 12 -6 14 -24 2 -32 C -4 -33 -12 -25 -12 -7 Z\"/><path transform=\"rotate(77)\" d=\"M0 0 C 12 -6 14 -24 2 -32 C -4 -33 -12 -25 -12 -7 Z\"/><path transform=\"rotate(128)\" d=\"M0 0 C 12 -6 14 -24 2 -32 C -4 -33 -12 -25 -12 -7 Z\"/><path transform=\"rotate(179)\" d=\"M0 0 C 12 -6 14 -24 2 -32 C -4 -33 -12 -25 -12 -7 Z\"/><path transform=\"rotate(230)\" d=\"M0 0 C 12 -6 14 -24 2 -32 C -4 -33 -12 -25 -12 -7 Z\"/><path transform=\"rotate(281)\" d=\"M0 0 C 12 -6 14 -24 2 -32 C -4 -33 -12 -25 -12 -7 Z\"/><path transform=\"rotate(332)\" d=\"M0 0 C 12 -6 14 -24 2 -32 C -4 -33 -12 -25 -12 -7 Z\"/><path transform=\"rotate(383)\" d=\"M0 0 C 12 -6 14 -24 2 -32 C -4 -33 -12 -25 -12 -7 Z\"/></g><circle r=\"15\" fill=\"#ffd23f\" style=\"filter: drop-shadow(0 2.5px 2.2px rgba(29,33,82,0.28))\"/></svg><span class=\"ds-door-face\">3×4</span></span><span class=\"ds-door-label\">Times Tables</span><span class=\"ds-door-stem\"></span></a>",
+      "css": ".ds-door { display: inline-flex; flex-direction: column; align-items: center; width: 12rem; text-decoration: none; outline: none; } .ds-door-head { position: relative; display: block; width: 100%; aspect-ratio: 1; transform-origin: 50% 100%; animation: ds-sway 5s ease-in-out infinite; transition: scale 300ms ease-out; } .ds-door:hover .ds-door-head, .ds-door:focus-visible .ds-door-head { scale: 1.05; } .ds-door-face { position: absolute; inset: 0; display: grid; place-items: center; font-family: \"Lilita One\", system-ui, sans-serif; font-size: 2.2rem; color: #1d2152; } .ds-door-label { position: relative; z-index: 1; margin-top: -12px; padding: 8px 16px; font-family: \"Lilita One\", system-ui, sans-serif; font-size: 1.6rem; color: #fff; background-color: var(--violet-deep, #5f2fcf); background-image: var(--grain, url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.2 0 0 0 0.14 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")); border-radius: var(--cut, 18px 26px 14px 30px / 24px 14px 28px 16px); box-shadow: var(--glue, 0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)); transform: rotate(-3deg); } .ds-door:focus-visible .ds-door-label { outline: 4px dashed #1d2152; outline-offset: 5px; } .ds-door-stem { width: 10px; height: 80px; margin-top: -8px; background: #2f9a35; border-radius: 4px; } @keyframes ds-sway { 0%,100% { transform: rotate(-2deg); } 50% { transform: rotate(2deg); } } @media (prefers-reduced-motion: reduce) { .ds-door-head { animation: none; } }"
+    },
+    {
+      "name": "Picture Card",
+      "kind": "card",
+      "refersTo": "answer-card",
+      "description": "Cream paper button holding a flat sticker picture; the correct one gets a 4px lime ring.",
+      "html": "<button class=\"ds-pic-card\" aria-label=\"Picture\"><span class=\"ds-sticker\"></span></button>",
+      "css": ".ds-pic-card { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 12px 24px; font-family: Andika, system-ui, sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--ink, #1d2152); background-color: var(--paper, #fffaf0); background-image: var(--grain, url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.2 0 0 0 0.14 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")); border: 0; border-radius: var(--cut, 18px 26px 14px 30px / 24px 14px 28px 16px); box-shadow: var(--glue, 0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)); cursor: pointer; transition: transform 260ms cubic-bezier(0.16,1,0.3,1), box-shadow 260ms cubic-bezier(0.16,1,0.3,1); padding: 12px; width: 11rem; } .ds-pic-card:hover { transform: translateY(-3px) rotate(-1deg); box-shadow: var(--glue-lift, 0 6px 4px rgba(29,33,82,0.16), 0 18px 28px -8px rgba(29,33,82,0.4)); } .ds-pic-card:active { transform: translateY(1px) scale(0.97); box-shadow: var(--glue, 0 3px 2px rgba(29,33,82,0.18), 0 10px 18px -6px rgba(29,33,82,0.35)); } .ds-pic-card:focus-visible { outline: 4px dashed var(--ink, #1d2152); outline-offset: 5px; } .ds-sticker { display: block; width: 96px; height: 96px; background: #ffd23f; border-radius: 50% 50% 46% 54%; filter: drop-shadow(2.5px 0 0 #fff) drop-shadow(-2.5px 0 0 #fff) drop-shadow(0 2.5px 0 #fff) drop-shadow(0 -2.5px 0 #fff) drop-shadow(0 4px 4px rgba(29,33,82,0.28)); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Classroom Paper Wall",
+    "overview": "Everything on screen is a piece of construction paper someone cut with scissors and glued to a sky-blue classroom wall. Color is not a fill, it is a sheet: every surface carries a fine grain, hand-cut corners that are never the same twice, and a soft glue-stick shadow that lifts it a few millimetres off the wall. A strip of torn green paper runs along the bottom of every screen, and flowers grow out of it.\n\nThe world is loud in color and calm in structure. Six saturated construction papers (pink, turquoise, lime, orange, violet, yellow) do all the talking against a single pale sky; ink-navy carries the words. Nothing is perfectly straight: signs, buttons and letters sit a degree or two off-true, flowers sway on their stems, and finished games end with a flower being pressed into the garden. Density is low and targets are huge, because the reader is eight years old and often using a finger.\n\nMenus are not grids of cards. Each choice is a differently shaped paper object (a big flower on a stem, a fanned stack of word cards, a paper sailboat), and the shape itself tells Emily what the game is. Pictures are flat stickers with a white cut-out border, never glossy 3D renders.",
+    "keyCharacteristics": [
+      "Sky-blue paper wall with fractal grain and vertical paper fibers on every page.",
+      "Torn green grass strip at the bottom of every screen, with a pale paper-core lip on the torn edge and a meadow of small swaying flowers.",
+      "Every surface is a sheet: grain texture, asymmetric hand-cut radius, glue shadow.",
+      "Small deliberate tilts (-3deg to +3deg) on signs, labels, buttons and letters.",
+      "Chunky display letters, each cut on its own colored scrap.",
+      "Flat stickers for all pictures; Lucide icons only on functional controls.",
+      "Reward is physical: a flower glues in with an overshoot and petals rain down."
+    ],
+    "rules": [
+      {
+        "name": "The Ink-On-Light Rule",
+        "body": "Ink text sits on the light papers: pink, turquoise, orange, yellow, lime, cream. White text appears only on the deep papers (pink-deep, violet-deep, turquoise-deep, orange-deep) or on pink, violet and red letter scraps at display size. Body-size white text on a light or mid paper is a defect.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink Shadow Rule",
+        "body": "Every shadow, drop-shadow and filter shadow is tinted with Classroom Ink (rgba(29, 33, 82, a)), never neutral black or gray. The glue is navy.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sheet, Not Fill Rule",
+        "body": "A colored surface always carries the grain texture over its color. A flat untextured color block is not paper and does not belong on the wall.",
+        "section": "colors"
+      },
+      {
+        "name": "The Scrap Letter Rule",
+        "body": "Titles are spelled one letter per paper scrap: each scrap cycles through pink, yellow, turquoise, orange, violet, lime, red, with its own tilt (-5deg to +5deg), its own 2px vertical lift and its own slightly different corner radius. Ink letters on yellow, lime, turquoise and orange scraps; white letters on pink, violet and red. The accessible name is carried by an sr-only copy.",
+        "section": "typography"
+      },
+      {
+        "name": "The Bold Reader Rule",
+        "body": "Running text is Andika 700. Regular weight is reserved for nothing; an 8-year-old reading English as a second language gets the heaviest clear letterforms.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Count Rule",
+        "body": "The body sets tabular numerals globally, so counters and multiplication facts never jitter as digits change.",
+        "section": "typography"
+      },
+      {
+        "name": "The Grass Floor Rule",
+        "body": "Every screen ends in torn grass with flowers growing from it. Content keeps 160px clear of the bottom edge.",
+        "section": "layout"
+      },
+      {
+        "name": "The Different Doors Rule",
+        "body": "A menu of games is a row of differently shaped paper objects at different heights, never a grid of same-size cards. Each door's shape announces its game.",
+        "section": "layout"
+      },
+      {
+        "name": "The Glue-Stick Rule",
+        "body": "Shadows are soft, short and ink-tinted, as if a sheet were glued down. No hard offset shadows, no long dramatic shadows, no glow.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Scissor Rule",
+        "body": "Every sheet uses the hand-cut radius, every organic shape carries seeded irregularity, and every torn edge is ragged with a pale core. Uniform rounded rectangles do not exist on the wall.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do put ink (#1d2152) text on pink, turquoise, orange, yellow, lime and cream paper; use white text only on pink-deep, violet-deep, turquoise-deep or orange-deep, or on pink, violet and red letter scraps at display size.",
+      "Do give every sheet the grain texture, the hand-cut radius and the Glue shadow.",
+      "Do tilt signs, labels and buttons by 1 to 3 degrees, alternating direction between neighbors.",
+      "Do show every picture as a flat sticker with the white cut-out border and ink glue shadow.",
+      "Do build game menus from differently shaped paper doors at different heights.",
+      "Do end every screen with torn grass that has an irregular edge and a pale paper-core lip.",
+      "Do hold a sign to the wall with masking tape when it should feel pinned up.",
+      "Do keep touch targets at 56px or taller and use Andika bold for all running text.",
+      "Do mark every earned or revealed thing with the glue-in motion, and respect reduced motion."
+    ],
+    "donts": [
+      "Don't set body-size white text on a light or mid paper (pink, turquoise, orange, yellow, lime, red).",
+      "Don't use glossy, gradient-lit or 3D-rendered pictures; stickers are flat style only.",
+      "Don't place Lucide icons as decoration next to pictures; Lucide is only for functional controls (Home, back/next, speaker, shuffle).",
+      "Don't lay out a menu of games as a grid of same-size rounded cards.",
+      "Don't use perfectly straight torn edges, uniform rounded rectangles, or untextured flat color blocks.",
+      "Don't use neutral gray or black shadows, hard offset shadows, blur or glass.",
+      "Don't show mistakes in red or with an X; a wrong answer wiggles and becomes a leaf."
+    ]
+  }
+}

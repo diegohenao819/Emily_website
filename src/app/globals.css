@@ -1,26 +1,182 @@
 @import "tailwindcss";
 
+/* Cut-paper classroom garden: every color is a sheet of construction paper. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --wall: #a8e0ff;
+  --wall-deep: #7cc8f2;
+  --grass: #4cbf45;
+  --grass-deep: #2f9a35;
+  --grass-light: #8fdc4f;
+  --paper: #fffaf0;
+  --ink: #1d2152;
+  --ink-soft: #3a3f7a;
+
+  --pink: #ff4f9a;
+  --pink-deep: #c81f68;
+  --turquoise: #00b3c7;
+  --turquoise-deep: #00798b;
+  --lime: #9bd423;
+  --orange: #ff7a1a;
+  --orange-deep: #c94f00;
+  --violet: #8e5cf7;
+  --violet-deep: #5f2fcf;
+  --yellow: #ffd23f;
+  --red: #ff4757;
+
+  --glue: 0 3px 2px rgba(29, 33, 82, 0.18), 0 10px 18px -6px rgba(29, 33, 82, 0.35);
+  --glue-lift: 0 6px 4px rgba(29, 33, 82, 0.16), 0 18px 28px -8px rgba(29, 33, 82, 0.4);
+  --cut: 18px 26px 14px 30px / 24px 14px 28px 16px;
+
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.1 0 0 0 0 0.2 0 0 0 0.14 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --fibers: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.012 0.08' numOctaves='2' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.13 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-wall: var(--wall);
+  --color-wall-deep: var(--wall-deep);
+  --color-grass: var(--grass);
+  --color-grass-deep: var(--grass-deep);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-pink: var(--pink);
+  --color-pink-deep: var(--pink-deep);
+  --color-turquoise: var(--turquoise);
+  --color-turquoise-deep: var(--turquoise-deep);
+  --color-lime: var(--lime);
+  --color-orange: var(--orange);
+  --color-orange-deep: var(--orange-deep);
+  --color-violet: var(--violet);
+  --color-violet-deep: var(--violet-deep);
+  --color-yellow: var(--yellow);
+  --color-red: var(--red);
+  --font-display: var(--font-lilita);
+  --font-sans: var(--font-andika);
+  --shadow-glue: var(--glue);
+  --shadow-glue-lift: var(--glue-lift);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--wall);
+  color-scheme: light;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100dvh;
+  color: var(--ink);
+  font-family: var(--font-andika), system-ui, sans-serif;
+  background-color: var(--wall);
+  background-image: var(--grain), var(--fibers);
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: var(--yellow);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 4px dashed var(--ink);
+  outline-offset: 5px;
+  border-radius: 14px;
+}
+
+* {
+  scrollbar-color: var(--pink) var(--wall-deep);
+}
+
+/* A sheet of paper: grain on top of its color, hand-cut corners, glue shadow. */
+.paper {
+  background-image: var(--grain);
+  border-radius: var(--cut);
+  box-shadow: var(--glue);
+}
+
+.paper-btn {
+  background-image: var(--grain);
+  border-radius: var(--cut);
+  box-shadow: var(--glue);
+  transition:
+    transform 260ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 260ms cubic-bezier(0.16, 1, 0.3, 1);
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+}
+@media (hover: hover) {
+  .paper-btn:hover:not(:disabled) {
+    transform: translateY(-3px) rotate(var(--tilt-hover, -1deg));
+    box-shadow: var(--glue-lift);
+  }
+}
+.paper-btn:active:not(:disabled) {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: var(--glue);
+}
+.paper-btn:disabled {
+  cursor: default;
+}
+
+/* Pictures become stickers: a white cut-out border and a glue shadow. */
+.sticker {
+  filter: drop-shadow(2.5px 0 0 #fff) drop-shadow(-2.5px 0 0 #fff) drop-shadow(0 2.5px 0 #fff) drop-shadow(0 -2.5px 0 #fff)
+    drop-shadow(0 4px 4px rgba(29, 33, 82, 0.28));
+}
+
+/* Flowers sway on their stems, like paper someone just pinned up. */
+@keyframes sway {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+.sway {
+  transform-origin: 50% 100%;
+  animation: sway 5s ease-in-out infinite;
+}
+
+/* Signature moment: a flower gets glued in. Visible from the first frame. */
+@keyframes glue-in {
+  0% { transform: scale(1.4) rotate(-16deg); filter: drop-shadow(0 26px 18px rgba(29, 33, 82, 0.35)); }
+  70% { transform: scale(0.94) rotate(3deg); }
+  100% { transform: scale(1) rotate(0deg); filter: drop-shadow(0 4px 3px rgba(29, 33, 82, 0.25)); }
+}
+.glue-in {
+  animation: glue-in 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes pop-digit {
+  0% { transform: translateY(40%) scale(0.6); opacity: 0.25; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+.pop-digit {
+  display: inline-block;
+  animation: pop-digit 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: translateX(0) rotate(0); }
+  20% { transform: translateX(-8px) rotate(-3deg); }
+  40% { transform: translateX(7px) rotate(3deg); }
+  60% { transform: translateX(-5px) rotate(-2deg); }
+  80% { transform: translateX(3px) rotate(1deg); }
+}
+.wiggle {
+  animation: wiggle 480ms ease-out;
+}
+
+@keyframes petal-fall {
+  0% { transform: translate3d(0, -12vh, 0) rotate(0deg); }
+  100% { transform: translate3d(var(--drift, 30px), 110vh, 0) rotate(var(--spin, 540deg)); }
+}
+.petal-fall {
+  animation: petal-fall var(--dur, 2.6s) cubic-bezier(0.3, 0.2, 0.4, 1) var(--delay, 0s) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+  .petal-fall { display: none; }
 }

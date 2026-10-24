@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Emily's Learning Garden
 
-## Getting Started
+Un jardín de flores de papel para que Emily aprenda jugando. Cada juego que termina pega una flor nueva en **My Garden** (se guarda solo en el dispositivo, sin cuentas ni datos personales).
 
-First, run the development server:
+## Secciones
+
+| Ruta | Qué hay |
+|---|---|
+| `/` | Portada: título, flores-puerta a cada sección y el jardín de Emily |
+| `/tables` | Tablas del 1 al 10: **Learn** (filas de flores + respuesta hablada) y **Quiz** de 10 preguntas, también en modo "Mix" |
+| `/english` | **Listen and find** (oye la palabra y toca el dibujo), **Word cards** (toca y escucha) y **My trip to Cartagena** (completa las frases del viaje en pasado) |
+
+Las palabras de inglés se pronuncian con la voz del navegador (Web Speech API); no hace falta internet extra ni claves.
+
+## Correrlo en tu computador
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Agregar contenido
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Palabras nuevas o temas de inglés:** `src/app/english/words.ts`. Cada palabra lleva `word` y una imagen en `public/pictures/` (o un `color`).
+- **Frases del viaje:** el arreglo `TRIP` en el mismo archivo.
+- **Una sección nueva:** crea `src/app/<nombre>/page.tsx` envuelta en `<ActivityShell title="...">` y agrega una flor en el arreglo `DOORS` de `src/app/page.tsx` (el botón "Coming soon" sigue disponible para lo próximo).
+- Al terminar un juego llama `earnFlower("<id-del-juego>", FLOWER_KINDS.length)` para que Emily gane su flor.
 
-## Learn More
+## Publicar en Vercel
 
-To learn more about Next.js, take a look at the following resources:
+1. Sube esta carpeta a un repositorio de GitHub.
+2. En https://vercel.com/new importa el repositorio. Vercel detecta Next.js solo; no hay variables de entorno que configurar.
+3. Deploy. Cada `git push` vuelve a publicar.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+También puedes usar la CLI: `npx vercel` y luego `npx vercel --prod`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+El sitio pide a los buscadores no indexarlo (`robots: noindex`), porque es un espacio personal.
 
-## Deploy on Vercel
+## Créditos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Dibujos de vocabulario: [Microsoft Fluent Emoji](https://github.com/microsoft/fluentui-emoji) (licencia MIT), reducidos a 256 px.
+- Fuentes: Lilita One y Andika (Google Fonts, licencia OFL), servidas por `next/font`.
+- Flores, pasto, nubes, sol y mariposas: SVG hechos a mano para este sitio.
